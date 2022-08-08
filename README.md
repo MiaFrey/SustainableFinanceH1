@@ -422,6 +422,88 @@ Given the bigger change in return and a small one in the volatility, the Sharpe 
 
 In conclusion, these values depend strongly on the random sample and change at each new run of the code. Since our sample is rather small it may not fit the theory.
 
+# Exercise 9
+
+- **For each time period, sort firms based on size into quintiles. Create equallyweighted and value-weighted portfolios for each time period and each size quintile. Report the average returns for each quintile portfolio as well as a portfolio that goes long in the lowest quintile and short the highest quintile. Comment on your results.**
+
+We start by retrieving the size data set with all of the securities and sorting them in ascending order. We then create 5 equally-sized bins (quintiles) and retrieve the ISINs of the firms in each quintile. With each of these quintiles (q1 to q5), we create equally-weighted and value-weighted portfolios for each month, similarly to Exercise 2.
+
+For the second part of the question, the aim is to construct a portfolio (one equally-weighted and one value-weighted) that goes long in the lowest quintile (q1) and short in the highest quintile (q5). Going long (holding a long position) in a financial asset can have different meanings depending on the type of asset (call, put, etc). In this report, the most common use of the term is considered. That is a long-position investment in which the investor purchases an asset and owns it with the expectation that the price is going to rise [Investopedia, 2021]. On the other hand, going short (holding a short position) means that the investor sells an asset, anticipating the price will fall in the short term and plans to buy it later [Investopedia, 2021]. The performance (return) of the long (q1) minus the performance of the short (q5) will give the short-long portfolio.
+
+Average returns for each quintile portfolio:
+
+<p align="center">
+    <img src="" width="400"> <img src="" width="400">
+</p>
+
+```
+Figure 28: Average return of the equally weighted portfolio per quantile & Figure 29: Average return of the value weighted portfolio per quantile
+```
+
+Above the average returns of the equally-weighted (EW) and value-weighted (VW) portfolios per quintile, from lowest (q1) to highest (q5) are depicted.
+
+To see the effect of the size more clearly, we plot only the first and last quintiles.
+
+<p align="center">
+    <img src="" width="400"> <img src="" width="400">
+</p>
+
+```
+Figure 30: Comparision of quantile 1 and 5 for the equally weighted portfolio & Figure 31: AComparision of quantile 1 and 5 for the value weighted portfolio
+```
+
+The volatility of the lower quintile (q1) is generally higher. This matches with the theory seen in Exercise 7, since smaller firms generally make for riskier investments. In both the EW and VW portfolios, the overall average return (taken across all months) is larger for the higher quintile. For the EW portfolio, this disparity is less significant (Q1 average return = 0.0069, Q5 average return = 0.011 –> ∆ = 0.0049). Whereas for the VW portfolio, the difference is larger and more significant (Q1 average return = -0.009, Q5 average return = 0.006 –> ∆ = 0.015). This is counter-intuitive, as one would expect the higher quintile (q5) to have smaller returns as a result of the negative correlation between size and return as well as the positive correlation between risk and return.
+
+Average returns for the short-long (SL) portfolio:
+
+<p align="center">
+    <img src="" width="400"> <img src="" width="400">
+</p>
+
+```
+Figure 32: Average return of the short-long equally weighted portfolio & Figure 33: Average return of the short-long value weighted portfolio
+```
+
+The average return of the SL portfolio is -0.02 for the EW and -0.07 for the VW. This makes sense insofar that an EW portfolio allows us to have a greater return (as seen in exercise 2). Nevertheless, upon this positioning in the market we were expecting to have higher returns than in the base case (simply investing in q1 firms) because the smaller firms are predicted to have higher returns (so we go long) and the larger firms a lower return (hence we go short). So overall, our SL portfolio should have outperformed the previously analyzed portfolios comprising of each size quintile (in theory). The discrepancy with our results could be due to an error in the data or a computational error upon constructing the portfolio.
+
+- **What can explain the relationship between returns of your portfolio and firms’ size?**
+
+As discussed in Exercise 7, there is indeed a relationship between portfolio return and firm size. Generally, size and return are negatively correlated. Smaller firms will on average yield higher returns and vice versa for larger firms. This is due to something called the "small firm effect", which demonstrates how smaller firms are riskier and hence yield a higher return, but also how small firms are more flexible, leading to them being able to better benefit from the market conditions and trends. There is also usually higher growth potential for smaller firms. This is also reflected 26
+
+- **Repeat this exercise but sorting firms based on past stock returns. Compute past returns in month t as the cumulated return of a firm between months t - 13 and t - 1.**
+
+In this part of the exercise, the steps under point 9.1 are repeated. However, we separate firms into quintiles based upon their previous stock returns, more precisely the cumulated returns over the past year. We then create an equally-weighted and value-weighted portfolio per month for each of the quintiles, as well as a portfolio than goes long in the lowest quintile and short in the highest.
+
+Average returns for each quintile portfolio and the short-long (SL) portfolio:
+
+<p align="center">
+    <img src="" width="400"> <img src="" width="400">
+</p>
+
+```
+Figure 34: AAverage return of the equally weighted portfolio per quantile & Figure 35: Average return of the value weighted portfolio per quantile
+```
+
+<p align="center">
+    <img src="" width="400"> <img src="" width="400">
+</p>
+
+```
+Figure 36: Comparison of the quantile 1 and 5 for the equally weighted portfolio & Figure 37: Comparison of the quantile 1 and 5 for the value weighted portfolio
+```
+
+<p align="center">
+    <img src="" width="400"> <img src="" width="400">
+</p>
+
+```
+Figure 38: Average return of the short-long equally weighted portfolio & Figure 39: Average return of the short-long value weighted portfolio
+```
+
+Above, one observes the different average returns per quintile per type of portfolio. Firstly, one notes that the scales for the EW and VW portfolio returns are not the same. We have much higher volatility for the equally-weighted portfolios, partially driven by one very high return of approximately 125%. Again the lower quintiles have higher volatility compared to q5. The relationship between average return (of all months) and past return is shown to be positive (Q1 average return = 0.009, Q5 average return = 0.019, for EW portfolio and Q1 average return = 0.003, Q5 average return = 0.009, for VW portfolio). In terms of the SL portfolio, there are no significant differences.
+
+How to explain this relationship between returns of the portfolio and the past returns of the firm? A phenomenon referred to as "momentum" is observed here. Generally, firms with rising prices (and hence high returns) continue to experience high returns, whereas firms with low past returns tend to continue on this trend. With this in mind, firms that have performed better in the past ought to outperform firms that have had lower past returns [12]. This is a market anomaly that the theory has trouble explaining, but that is often observed in practice. In other words, it can be said that past "winners" tend to perform better!
+
 # Collaborators
 - [Mia Frey](https://www.linkedin.com/in/mia-frey-28209a208/)
 - [Louis Delesert](https://www.linkedin.com/in/louis-delessert-5ab43b221/)
