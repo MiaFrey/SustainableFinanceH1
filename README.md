@@ -428,7 +428,7 @@ In conclusion, these values depend strongly on the random sample and change at e
 - [Jasmina Djordevic](https://www.linkedin.com/in/jasmina-d-4151161b2/)
 - [Elodie Savioz](https://www.linkedin.com/in/elodie-savioz-4733871aa/)
 
-#Sources
+# Sources
 
 [1] https://www.vuibert.fr/system/files/ressources/9782311401745-theorie-du-portefeuille.pdf
 
