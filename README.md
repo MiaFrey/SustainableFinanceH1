@@ -252,7 +252,7 @@ given set of assets.
 The portfolio that will be chosen by the investor, which lies **on** the efficient frontier, will depend on his/her level of risk aversion. Furthermore, a risk-lover investor will choose a portfolio on the efficient frontier, but further to the right (in a risk-return graph), while a risk-averse investor will choose a portfolio more to the left.
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183473626-7405b3bd-781b-4484-bae6-9c95f819b319.png" width="600">
+    <img src="https://user-images.githubusercontent.com/110820736/183473626-7405b3bd-781b-4484-bae6-9c95f819b319.png" width="400" height="280">
 </p>
 
 ```
@@ -316,7 +316,7 @@ European _ market _ return = Excess _ European _ market _ return + Risk _ free _
 The European market index (EU market return), starts in the year 2002 and the dataset contains monthly values. The aim is to compare the performance of this index with the equally-weighted, value-weighted and minimum-variance portfolios from the exercise before. Here is a graph summarizing all of them in one:
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183475955-f9d3c375-11d3-4c71-8074-7d6c0545dbaa.png" width="600">
+    <img src="https://user-images.githubusercontent.com/110820736/183475955-f9d3c375-11d3-4c71-8074-7d6c0545dbaa.png" width="400" height="280">
 </p>
 
 ```
@@ -328,7 +328,7 @@ It depicts well how the 2008 financial crisis influences the entire financial ma
 - Equally-weighted portfolio and European Market Index
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183477549-4705d5f8-76d8-461b-b65d-93e0c365c226.png" width="600">
+    <img src="https://user-images.githubusercontent.com/110820736/183477549-4705d5f8-76d8-461b-b65d-93e0c365c226.png" width="400" height="280">
 </p>
 
 ```
@@ -342,7 +342,7 @@ The spike observed in 2009 is what pulls up the average return of the EW portfol
 - Value-weighted portfolio and European Market Index
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183477739-71ca4108-8b4c-4749-a290-637da7918467.png" width="600">
+    <img src="https://user-images.githubusercontent.com/110820736/183477739-71ca4108-8b4c-4749-a290-637da7918467.png" width="400" height="280">
 </p>
 
 ```
@@ -354,7 +354,7 @@ This graph compares the performance of the value-weighted (VW) and European mark
 - Minimum variance portfolio and European Market Index
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183477904-0ab059e4-230c-40de-8d6e-b1e191c8b208.png" width="600">
+    <img src="https://user-images.githubusercontent.com/110820736/183477904-0ab059e4-230c-40de-8d6e-b1e191c8b208.png" width="400" height="280">
 </p>
 
 ```
