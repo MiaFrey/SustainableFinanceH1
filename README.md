@@ -43,7 +43,7 @@ for m = (1, 2, ..., 12)
 Then we computed the average return by taking the mean of the monthly return per company. Finally, to calculate the annualized average return we multiply by 12 because we suppose that the distribution for each month is the same. For the analysis of this exercise, we discard the NaNs to have a fair analysis. In other words, only companies with values for all the years are considered such that they are not “in competition” with a company that only has for instance three years, but of high performance. Our data set thus decreases to 1371 firms.
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183467852-ca738074-9139-4b6a-942f-4a1c385b253e.png" width="400">
+    <img src="https://user-images.githubusercontent.com/110820736/183467852-ca738074-9139-4b6a-942f-4a1c385b253e.png" width="400" height="280">
 </p>
 
 ```
@@ -109,7 +109,7 @@ The value-weighted portfolio is composed of investing a proportion in the outsta
 We find the following summary statistics for each portfolio:
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183417961-6d518797-f9e9-4146-98f9-7c6ea4fcac3d.png" width="400"> <img src="https://user-images.githubusercontent.com/110820736/183468552-cb0f450b-5aca-4ada-a882-6c7b11d07e7d.png" width="400">
+    <img src="https://user-images.githubusercontent.com/110820736/183417961-6d518797-f9e9-4146-98f9-7c6ea4fcac3d.png" width="400" height="280"> <img src="https://user-images.githubusercontent.com/110820736/183468552-cb0f450b-5aca-4ada-a882-6c7b11d07e7d.png" width="400" height="280">
 </p>
 
 ```
@@ -117,7 +117,7 @@ Figure 6: Summary statistics of the equally-weighted portfolio & Figure 7: Retur
 ```
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183418044-5916ea11-6b43-41e4-b34d-568de8b34fbd.png" width="400"> <img src="https://user-images.githubusercontent.com/110820736/183468715-62db539e-e3ba-4d96-9399-900f8c4f7522.png" width="400">
+    <img src="https://user-images.githubusercontent.com/110820736/183418044-5916ea11-6b43-41e4-b34d-568de8b34fbd.png" width="400" height="280"> <img src="https://user-images.githubusercontent.com/110820736/183468715-62db539e-e3ba-4d96-9399-900f8c4f7522.png" width="400" height="280">
 </p>
 
 ```
@@ -144,7 +144,7 @@ In the above plots (Figure 7 & 9) we can see that the range of the y-axis is big
 By selecting the company with the highest annualized average return (computed in Exercise 1), one finds the annualized average return and annualized volatility upon investing only in the asset selected above. However, the values retrieved were both rather high. The plot of the monthly returns of this company (Figure 12) clearly shows an outlier with a monthly return of 81.5, whereas most of the other monthly observations are closer to 0. Hence, this firm was discarded to avoid a biased average (influenced upwards) and to make it better represent reality. The same process is repeated and again shows an outlier that is eliminated following the reasoning as previously (Figure 13).
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183469003-a69a6169-9ef6-49af-b233-f17a53446105.png" width="400"> <img src="https://user-images.githubusercontent.com/110820736/183469120-000e5661-70ff-40d8-8674-fcaccd4470de.png" width="405">
+    <img src="https://user-images.githubusercontent.com/110820736/183469003-a69a6169-9ef6-49af-b233-f17a53446105.png" width="400" height="280"> <img src="https://user-images.githubusercontent.com/110820736/183469120-000e5661-70ff-40d8-8674-fcaccd4470de.png" width="405" height="280">
 </p>
 
 ```
@@ -154,7 +154,7 @@ Figure 10: Annualized average returns with the first outlier & Figure 11: Annual
 At the third try, the following statistics are found, which don’t seem to be skewed by outliers:
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183434856-e6e46a93-6a37-48d2-8453-032335f14041.png" width="400"> <img src="https://user-images.githubusercontent.com/110820736/183469495-c1f882b5-5ac7-46b2-a673-bc5db0aacd2e.png" width="400">
+    <img src="https://user-images.githubusercontent.com/110820736/183434856-e6e46a93-6a37-48d2-8453-032335f14041.png" width="400" height="280"> <img src="https://user-images.githubusercontent.com/110820736/183469495-c1f882b5-5ac7-46b2-a673-bc5db0aacd2e.png" width="400" height="280">
 </p>
 
 ```
@@ -186,7 +186,7 @@ Furthermore, a portfolio composed of many stocks, on average, also flattens/smoo
 The goal here is to find the company with the highest average return computed over the first two years. To be consistent with our data set we choose to annualize the terms to identify the firm with the highest average return over two years. This decision does not change the interpretation of the results because it is only a multiplication by factor 12.
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183471017-0f4d043b-108e-46ac-928a-844fec4d1554.png" width="400"> <img src="https://user-images.githubusercontent.com/110820736/183472144-12fd0370-cce0-4bc4-ab2a-5ad199163a29.png" width="400">
+    <img src="https://user-images.githubusercontent.com/110820736/183471017-0f4d043b-108e-46ac-928a-844fec4d1554.png" width="400" height="280"> <img src="https://user-images.githubusercontent.com/110820736/183472144-12fd0370-cce0-4bc4-ab2a-5ad199163a29.png" width="400" height="280">
 </p>
 
 ```
@@ -218,7 +218,7 @@ The aim of the minimum variance portfolio is, as the name already says, to have 
 The rest of the portfolio performance is summarized here below.
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183472675-56964cc5-932c-492b-aa4d-bfae6fe4f24f.png" width="400"> <img src="https://user-images.githubusercontent.com/110820736/183472738-6bfbe8c4-6448-4a6b-bee9-601cbaade27c.png" width="400">
+    <img src="https://user-images.githubusercontent.com/110820736/183472675-56964cc5-932c-492b-aa4d-bfae6fe4f24f.png" width="400" height="280"> <img src="https://user-images.githubusercontent.com/110820736/183472738-6bfbe8c4-6448-4a6b-bee9-601cbaade27c.png" width="400" height="280">
 </p>
 
 ```
@@ -407,7 +407,7 @@ The 50 randomly selected firms are the starting point. The smallest firms (botto
 The following data is obtained:
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183478589-b654bd83-d237-4571-91c4-f1746b68c5e8.png" width="400"> <img src="https://user-images.githubusercontent.com/110820736/183478656-7f5cb2f1-403b-4396-bf45-67514608c5fa.png" width="400">
+    <img src="https://user-images.githubusercontent.com/110820736/183478589-b654bd83-d237-4571-91c4-f1746b68c5e8.png" width="400" height="280"> <img src="https://user-images.githubusercontent.com/110820736/183478656-7f5cb2f1-403b-4396-bf45-67514608c5fa.png" width="400" height="280">
 </p>
 
 ```
@@ -433,7 +433,7 @@ For the second part of the question, the aim is to construct a portfolio (one eq
 Average returns for each quintile portfolio:
 
 <p align="center">
-    <img src="" width="400"> <img src="" width="400">
+    <img src="https://user-images.githubusercontent.com/110820736/185876594-5b6a194e-68c9-498b-ab8c-6601f6eea745.png" width="400" height="280"> <img src="https://user-images.githubusercontent.com/110820736/185876683-054c87d2-9800-4c6b-9c0a-8759a0f0a05b.png" width="400" height="280">
 </p>
 
 ```
@@ -445,11 +445,11 @@ Above the average returns of the equally-weighted (EW) and value-weighted (VW) p
 To see the effect of the size more clearly, we plot only the first and last quintiles.
 
 <p align="center">
-    <img src="" width="400"> <img src="" width="400">
+    <img src="https://user-images.githubusercontent.com/110820736/185877048-5c743369-8de1-4e11-9f27-c3c23478b45c.png" width="400" height="280"> <img src="https://user-images.githubusercontent.com/110820736/185877101-a408caa1-5452-4b10-9b79-0ab1ce027102.png" width="400" height="280">
 </p>
 
 ```
-Figure 30: Comparision of quantile 1 and 5 for the equally weighted portfolio & Figure 31: AComparision of quantile 1 and 5 for the value weighted portfolio
+Figure 30: Comparision of quantile 1 and 5 for the equally weighted portfolio & Figure 31: Comparision of quantile 1 and 5 for the value weighted portfolio
 ```
 
 The volatility of the lower quintile (q1) is generally higher. This matches with the theory seen in Exercise 7, since smaller firms generally make for riskier investments. In both the EW and VW portfolios, the overall average return (taken across all months) is larger for the higher quintile. For the EW portfolio, this disparity is less significant (Q1 average return = 0.0069, Q5 average return = 0.011 –> ∆ = 0.0049). Whereas for the VW portfolio, the difference is larger and more significant (Q1 average return = -0.009, Q5 average return = 0.006 –> ∆ = 0.015). This is counter-intuitive, as one would expect the higher quintile (q5) to have smaller returns as a result of the negative correlation between size and return as well as the positive correlation between risk and return.
@@ -457,7 +457,7 @@ The volatility of the lower quintile (q1) is generally higher. This matches with
 Average returns for the short-long (SL) portfolio:
 
 <p align="center">
-    <img src="" width="400"> <img src="" width="400">
+    <img src="https://user-images.githubusercontent.com/110820736/185877421-84f45c5a-55c1-4d42-ba88-9461a52d2adc.png" width="400" height="280"> <img src="https://user-images.githubusercontent.com/110820736/185877493-8cef2d2e-2294-4846-bf5b-9d3d61dfcfc7.png" width="400" height="280">
 </p>
 
 ```
@@ -477,15 +477,15 @@ In this part of the exercise, the steps under point 9.1 are repeated. However, w
 Average returns for each quintile portfolio and the short-long (SL) portfolio:
 
 <p align="center">
-    <img src="" width="400"> <img src="" width="400">
+    <img src="https://user-images.githubusercontent.com/110820736/185877751-f79ffce0-47ea-4024-b5a0-a0b252d270ac.png" width="400" height="280"> <img src="https://user-images.githubusercontent.com/110820736/185877804-86425883-b61b-4fee-b893-3c2e59fac5bd.png" width="400" height="280">
 </p>
 
 ```
-Figure 34: AAverage return of the equally weighted portfolio per quantile & Figure 35: Average return of the value weighted portfolio per quantile
+Figure 34: Average return of the equally weighted portfolio per quantile & Figure 35: Average return of the value weighted portfolio per quantile
 ```
 
 <p align="center">
-    <img src="" width="400"> <img src="" width="400">
+    <img src="https://user-images.githubusercontent.com/110820736/185878085-86139a58-f420-4421-aec4-7d0df1a6397b.png" width="400" height="280"> <img src="https://user-images.githubusercontent.com/110820736/185878144-2dd4ce2e-28cf-4ec8-b13c-cba71e292d6d.png" width="400" height="280">
 </p>
 
 ```
@@ -493,7 +493,7 @@ Figure 36: Comparison of the quantile 1 and 5 for the equally weighted portfolio
 ```
 
 <p align="center">
-    <img src="" width="400"> <img src="" width="400">
+    <img src="https://user-images.githubusercontent.com/110820736/185878263-37b61358-c29b-497f-aa8e-6ea2d7d7c06d.png" width="400" height="280"> <img src="https://user-images.githubusercontent.com/110820736/185878314-da1c7d5a-57d6-4259-83e7-64a1924804be.png" width="400" height="280">
 </p>
 
 ```
@@ -514,33 +514,27 @@ How to explain this relationship between returns of the portfolio and the past r
 
 [1] https://www.vuibert.fr/system/files/ressources/9782311401745-theorie-du-portefeuille.pdf
 
-[2] https://www.investopedia.com/terms/s/short.asp: :text=A%20short%20position%20refers%20to,fall%20in%20the%20short%20term.
+[2] https://www.investopedia.com/terms/s/short.asp::text=A%20short%20position%20refers%20to,fall%20in%20the%20short%20term.
 
 [5] https://www.smartcapitalmind.com/what-is-the-small-firm-effect.htm
 
-[6] https://www.investopedia.com/ask/answers/022715/are-small-cap-companies-more-risky-
+[6] https://www.investopedia.com/ask/answers/022715/are-small-cap-companies-more-risky-investments-large-cap-companies.asp::text=Small%2Dcap%20companies%20tend%20to,negative%20events%20and%20bearish%20sentiments.
 
-investments-large-cap-companies.asp: :text=Small%2Dcap%20companies%20tend%20to,negative%
-20events%20and%20bearish%20sentiments.
+[7]https://www.investopedia.com/terms/s/smallfirmeffect.asp::text=The%20small%20firm%20effect%20theory%20holds%20that%20smaller%20companies%20have,to%20a%20large%20price%20appreciation.
 
-[7] https://www.investopedia.com/terms/s/smallfirmeffect.asp: :text=The%20small%20firm%20effect%20theory%20holds%20that%20smaller%20companies%20have,to%20a%20large%20price%20appreciation.
-
-[8] https://reader.elsevier.com/reader/sd/pii/0304405X81900180?token=E9C6045225284B3
-
-161FF5D4F1B376AA00A1EFF579179FAB5FABD5FFA1A37A2E5EED8E2D9C3868180B35110C
-
-C9600F6FAoriginRegion=eu-west-1originCreation=20220323130656
+[8] https://reader.elsevier.com/reader/sd/pii/0304405X81900180?token=E9C6045225284B3161FF5D4F1B376AA00A1EFF579179FAB5FABD5FFA1A37A2E5EED8E2D9C3868180B35110CC9600F6FAoriginRegion=eu-west-1originCreation=20220323130656
 
 [9] https://www.capital.fr/entreprises-marches/ratio-de-sharpe-1380962
 
-[10] https://www.lafinancepourtous.com/decryptages/finance-perso/epargne-et-placement/le-couple-
-rendement-risque/
+[10] https://www.lafinancepourtous.com/decryptages/finance-perso/epargne-et-placement/le-couple-rendement-risque/
 
 [11] Dhankar, Raj and Maheshwari, Supriya, Behavioural Finance: A New Paradigm to Explain
 Momentum Effect (May 27, 2016). Available at SSRN: https://ssrn.com/abstract=2785520 or
-[http://dx.doi.org/10.2139/ssrn.2785520](http://dx.doi.org/10.2139/ssrn.2785520) [12] https://en.wikipedia.org/wiki/Momentum _f inance_
+[http://dx.doi.org/10.2139/ssrn.2785520](http://dx.doi.org/10.2139/ssrn.2785520)
 
-[13] https://fr.wikipedia.org/wiki/Ratio _deSharpe_
+[12] https://en.wikipedia.org/wiki/Momentum_finance_
+
+[13] https://fr.wikipedia.org/wiki/Ratio_deSharpe_
 
 [14] https://www.investopedia.com/terms/m/marketindex.asp
 
@@ -548,17 +542,17 @@ Momentum Effect (May 27, 2016). Available at SSRN: https://ssrn.com/abstract=278
 
 [16] Fahlenbrach, 2022, Sustainable and Entrepreneurial Finance
 
-[17] https://fr.wikipedia.org/wiki/Seconde _intifada_
+[17] https://fr.wikipedia.org/wiki/Seconde_intifada_
 
 [18] https://www.vuibert.fr/system/files/ressources/9782311401745-theorie-du-portefeuille.pdf
 
 [19] https://israel-canada.co.il/en/about-us-english/
 
-[20] https://fr.wikipedia.org/wiki/Euro _etDanemark_
+[20] https://fr.wikipedia.org/wiki/Euro_etDanemark_
 
-[21] [http://www.nasdaqomxnordic.com/shares/microsite?Instrument=CSE3431](http://www.nasdaqomxnordic.com/shares/microsite?Instrument=CSE3431)
+[21] [http://www.nasdaqomxnordic.com/shares/microsite?Instrument=CSE3431]
 
-[22] https://fr.wikipedia.org/wiki/Conflit _isra_ é _lo_ − _libanaisde_ 2006
+[22] https://fr.wikipedia.org/wiki/Conflit_isra_é_lo_−_libanaisde_2006
 
 [23] Maillard, S., Roncalli, T., Teïletche, J. (2010). The properties of equally weighted risk
 contribution portfolios. The Journal of Portfolio Management, 36(4), 60-70
