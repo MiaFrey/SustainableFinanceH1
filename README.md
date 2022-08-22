@@ -20,7 +20,7 @@ To identify these firms of interest, we merge the scope 1-3 emission data sets w
 For the formatting of our data, we decided to import and transpose the data sets of interest, while only keeping the securities found above. That way, we have the rows as our time indicator (per month, reformatted from string to date type) and the columns represent the securities (ISIN). We saved the cleaned data into new excel files locally, to reduce the compilation time when running the code repeatedly. Lastly, once having calculated the returns, we drop the month December 1999 in our imported data sets, to remain consistent, as this month is "lost" upon calculating the returns. Except for the data set size, for which we use the December 1999 data in later exercises (Figure 1). Further, we make sure to also replace infinite values with NaNs at this point, as these undefined values else would create noise.
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183402126-c9d54b9c-b753-4f0c-89d7-7c79da1a4b5f.png" width="800">
+    <img src="https://user-images.githubusercontent.com/110820736/183402126-c9d54b9c-b753-4f0c-89d7-7c79da1a4b5f.png" width="600">
 </p>
 
 ```
@@ -34,7 +34,7 @@ all individual assets.**
 
 Given the monthly prices (including dividends) in our data set, we calculated the monthly returns such that:
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183404380-e3fc86fc-410e-4f91-9f7a-4717b8c07bdb.png" width="800">
+    <img src="https://user-images.githubusercontent.com/110820736/183404380-e3fc86fc-410e-4f91-9f7a-4717b8c07bdb.png" width="600">
 </p>
 
 
@@ -53,7 +53,7 @@ Figure 2: Annualized average return per company
 The data points on Figure 2 represent the securities. The higher the return the better. We can observe that the annualized average return of many of them is positive. Only a few of them have a negative value. As mentioned in the summary statistics table (Figure 4), the average of all those returns is 0.13. Furthermore, we can observe two outliers. We will go more into depth about these in exercise 3. For the volatility we used the built-in Python function of the standard deviation and multiplied this by the square root of 12 to obtain the annualized volatility per individual asset. This is one of the best ways to measure the risk because it is easier to interpret than the variance [Rockinger, 2020]. Thus, the lower the volatility the better, since it is synonymous with a smaller risk.
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183468156-9c5c1397-d338-48de-8fe9-ba941660f41d.png" width="400">
+    <img src="https://user-images.githubusercontent.com/110820736/183468156-9c5c1397-d338-48de-8fe9-ba941660f41d.png" width="400" height="280">
 </p>
 
 ```
@@ -68,7 +68,7 @@ greatly increases the average, since this metric is not robust to extremes. The 
 annualized volatilities is 0.40.
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183405022-d9e50f80-cf8e-4aa4-a860-df872dfb3aa0.png" width="800">
+    <img src="https://user-images.githubusercontent.com/110820736/183405022-d9e50f80-cf8e-4aa4-a860-df872dfb3aa0.png" width="600">
 </p>
 
 ```
@@ -81,7 +81,7 @@ on the observed correlation.**
 The computed correlation between the individual annualized average returns and volatility is 0.79. It is strongly positive and almost equal to 1. This is in line with the theory because we know that the return acts as compensation for the risk taken. Meaning the higher the volatility, the higher the risk ought to be. If this were not the case, then it would be easy to invest with small risk and gain high returns, so we would all be rich. At this stage, it is also important to look at the correlation between the securities, especially since portfolios will be created in the following exercises. The higher the correlation between the assets, the more difficult it is to benefit from diversification. If the assets are perfectly negatively correlated, then there exists a portfolio such that the expected risk is zero. In reality, this is rarely the case. If the portfolio is big, then the variance terms are diversified away but not the covariance terms. Hence, diversification can eliminate some, but not all the risk of individual securities. There is a systematic risk (or market risk) that defines the lower bound of our portfolio risk.
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183405306-9ce6061c-479c-4a87-b81e-0beeffca8cd6.png" width="800">
+    <img src="https://user-images.githubusercontent.com/110820736/183405306-9ce6061c-479c-4a87-b81e-0beeffca8cd6.png" width="600">
 </p>
 
 ```
@@ -101,7 +101,7 @@ The equally-weighted portfolio is one where all constituent firms have an equal 
 The value-weighted portfolio is composed of investing a proportion in the outstanding value of each stock. This is done, for instance, by SP 500 or NASDAQ [Fahlenbrach, 2022]. To form it, each month is taken in turn and the securities which are traded during this month (total_traded) are kept and we look at the market capitalization of each company (market_cap_i), given in the size data set. Seeing as though we invest at time t, we only know the size of the company at time t. But the return of the portfolio is only realised at time t + 1. This is why the firm return, return_t+1, is used to compute the return of the portfolio, in combination with the size at time t. Hence, the portfolio return is equal to the sum of weights based on time t and returns in period t + 1. The market capitalization changes each month, thus the weight of the asset does as well, seeing as though we rebalance the portfolio each month.
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183417128-6b085495-8194-4775-b31b-cb18110ec854.png" width="800">
+    <img src="https://user-images.githubusercontent.com/110820736/183417128-6b085495-8194-4775-b31b-cb18110ec854.png" width="600">
 </p>
 
 - **Report the following statistics for both portfolios: annualized average return, annualized volatility, minimum return, maximum return, and Sharpe ratio.**
@@ -252,7 +252,7 @@ given set of assets.
 The portfolio that will be chosen by the investor, which lies **on** the efficient frontier, will depend on his/her level of risk aversion. Furthermore, a risk-lover investor will choose a portfolio on the efficient frontier, but further to the right (in a risk-return graph), while a risk-averse investor will choose a portfolio more to the left.
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183473626-7405b3bd-781b-4484-bae6-9c95f819b319.png" width="800">
+    <img src="https://user-images.githubusercontent.com/110820736/183473626-7405b3bd-781b-4484-bae6-9c95f819b319.png" width="600">
 </p>
 
 ```
@@ -270,7 +270,7 @@ where _E(Rp)_ is the expected return of the risky portfolio, _Rf_ is the risk fr
 The Sharpe ratio is used to calculate the relationship between the return and risk of an investment [Capital, 2020]. As observable in the Figure 19, the risky portfolio with the highest Sharpe ratio is he tangency portfolio (tangency point between the capital allocation line and the mean-variance efficient frontier) [Dhankar, Raj and Maheshwari, Supriya, 2016].
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183475065-06eebe4d-c115-45c5-b8ea-c23ce51c33cc.png" width="800">
+    <img src="https://user-images.githubusercontent.com/110820736/183475065-06eebe4d-c115-45c5-b8ea-c23ce51c33cc.png" width="600">
 </p>
 
 ```
@@ -286,7 +286,7 @@ Depending on the value of the Sharpe ratio, the following interpretations exist:
 We obtain the following Sharpe ratios for each targeted return:
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183475341-f7850834-4580-4263-848b-859445a18c9b.png" width="800">
+    <img src="https://user-images.githubusercontent.com/110820736/183475341-f7850834-4580-4263-848b-859445a18c9b.png" width="600">
 </p>
 
 ```
@@ -316,7 +316,7 @@ European _ market _ return = Excess _ European _ market _ return + Risk _ free _
 The European market index (EU market return), starts in the year 2002 and the dataset contains monthly values. The aim is to compare the performance of this index with the equally-weighted, value-weighted and minimum-variance portfolios from the exercise before. Here is a graph summarizing all of them in one:
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183475955-f9d3c375-11d3-4c71-8074-7d6c0545dbaa.png" width="800">
+    <img src="https://user-images.githubusercontent.com/110820736/183475955-f9d3c375-11d3-4c71-8074-7d6c0545dbaa.png" width="600">
 </p>
 
 ```
@@ -328,7 +328,7 @@ It depicts well how the 2008 financial crisis influences the entire financial ma
 - Equally-weighted portfolio and European Market Index
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183477549-4705d5f8-76d8-461b-b65d-93e0c365c226.png" width="800">
+    <img src="https://user-images.githubusercontent.com/110820736/183477549-4705d5f8-76d8-461b-b65d-93e0c365c226.png" width="600">
 </p>
 
 ```
@@ -342,7 +342,7 @@ The spike observed in 2009 is what pulls up the average return of the EW portfol
 - Value-weighted portfolio and European Market Index
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183477739-71ca4108-8b4c-4749-a290-637da7918467.png" width="800">
+    <img src="https://user-images.githubusercontent.com/110820736/183477739-71ca4108-8b4c-4749-a290-637da7918467.png" width="600">
 </p>
 
 ```
@@ -354,7 +354,7 @@ This graph compares the performance of the value-weighted (VW) and European mark
 - Minimum variance portfolio and European Market Index
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183477904-0ab059e4-230c-40de-8d6e-b1e191c8b208.png" width="800">
+    <img src="https://user-images.githubusercontent.com/110820736/183477904-0ab059e4-230c-40de-8d6e-b1e191c8b208.png" width="600">
 </p>
 
 ```
@@ -364,7 +364,7 @@ Figure 24: Comparison of the minimum variance portfolio and the European market
 Lastly, the comparison between the minimum variance (MV) and European market portfolios. The MV portfolio has on average a lower volatility. When it comes to the MV portfolio, as predicted, we will have, on average, a lower volatility than the market portfolio (0.13 <  0.19). This can also be observed on the graph since the EU market return generally has bigger spikes, meaning more volatility. This is evident as the aim of the MV portfolio is to actively minimize the risk, meaning in turn that there is no/little return compensation for the risk taken. Both returns are rather similar, thus it would make more sense to invest in the MV portfolio than in the market one since for a given return the risk is lower.
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183478116-be0599dd-3c19-4dc0-960a-87ebb2729fea.png" width="800">
+    <img src="https://user-images.githubusercontent.com/110820736/183478116-be0599dd-3c19-4dc0-960a-87ebb2729fea.png" width="600">
 </p>
 
 ```
@@ -380,7 +380,7 @@ Figure 25: Summary table of the performances of the different portfolios
 Between returns and volatility, a correlation of 0.79 is found. The following graph illustrates this positive relationship:
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183478359-fc42b950-c948-48c6-a806-5cd73c3701f5.png" width="800">
+    <img src="https://user-images.githubusercontent.com/110820736/183478359-fc42b950-c948-48c6-a806-5cd73c3701f5.png" width="600">
 </p>
 
 This relationship is explained by the fact that an agent will not invest in a riskier asset if there is no benefit in the form of return. In that case, s/he would only invest in risk-free assets. Therefore, for a higher risk, the return is higher [Lafinancepourtous, 2022].
