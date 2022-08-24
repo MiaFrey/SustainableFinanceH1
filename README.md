@@ -34,7 +34,7 @@ all individual assets.**
 
 Given the monthly prices (including dividends) in our data set, we calculated the monthly returns such that:
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183404380-e3fc86fc-410e-4f91-9f7a-4717b8c07bdb.png" width="600">
+    <img src="https://user-images.githubusercontent.com/110820736/183404380-e3fc86fc-410e-4f91-9f7a-4717b8c07bdb.png" width="400">
 </p>
 
 
@@ -270,7 +270,7 @@ where _E(Rp)_ is the expected return of the risky portfolio, _Rf_ is the risk fr
 The Sharpe ratio is used to calculate the relationship between the return and risk of an investment [Capital, 2020]. As observable in the Figure 19, the risky portfolio with the highest Sharpe ratio is he tangency portfolio (tangency point between the capital allocation line and the mean-variance efficient frontier) [Dhankar, Raj and Maheshwari, Supriya, 2016].
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/110820736/183475065-06eebe4d-c115-45c5-b8ea-c23ce51c33cc.png" width="600">
+    <img src="https://user-images.githubusercontent.com/110820736/186340622-ba1bc622-650f-4ddf-90e6-9b2f1296f9a8.png" width="600">
 </p>
 
 ```
